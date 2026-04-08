@@ -2,7 +2,7 @@
 
 The public registry of smart contracts that conform to the **DeFi Kernel** standard on Cardano.
 
-This repository is the single source of truth for the [DeFi Kernel website](https://defikernel.org). Each contract is described by one markdown file under [`contracts/`](./contracts). The website fetches these files directly — to add or update a contract, open a pull request.
+This repository is the single source of truth for the [DeFi Kernel website](https://defikernel.org). Each contract is described by one markdown file. The website fetches these files directly — to add or update a contract, open a pull request.
 
 ---
 
@@ -19,7 +19,7 @@ DeFi Kernel is an open standard for publishing financial intent on Cardano. Any 
 ## Contributing a contract
 
 1. Fork this repository.
-2. Copy [`contracts/_template.md`](./contracts/_template.md) to `contracts/<your-contract-slug>.md`.
+2. Copy [`_template.md`](_template.md) to `<your-contract-slug>.md`.
 3. Fill in every field. Do not delete sections — leave them empty if not yet applicable, or write `_n/a_`.
 4. Open a pull request. The website rebuilds automatically once the PR is merged.
 
@@ -74,15 +74,14 @@ That's it. The site renders the markdown of each section into the corresponding 
 ```
 defi-kernel-registry/
 ├── README.md              # this file
-└── contracts/
-    ├── _template.md       # copy this to start a new contract
-    ├── cardano-swaps.md
-    ├── cardano-loans.md
-    ├── cardano-options.md
-    ├── cardano-aftermarket.md
-    ├── danogo-clmm.md
-    ├── danogo-lending.md
-    └── splash-dex.md
+├── _template.md       # copy this to start a new contract
+├── cardano-swaps.md
+├── cardano-loans.md
+├── cardano-options.md
+├── cardano-aftermarket.md
+├── danogo-clmm.md
+├── danogo-lending.md
+└── splash-dex.md
 ```
 
 ---
